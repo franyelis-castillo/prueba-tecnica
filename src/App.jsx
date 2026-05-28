@@ -1,10 +1,26 @@
+import { Routes, Route, Navigate } from 'react-router-dom'
+
+import Login from './pages/Login'
+import Panel from './pages/Panel'
+import ProtectedRoute from './routes/ProtectedRoute'
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-yellow-500">
-        PRUEBA TÉCNICA
-      </h1>
-    </div>
+    <Routes>
+      {/* Redirección automática */}
+      <Route path="/" element={<Navigate to="/login" />} />
+
+      <Route path="/login" element={<Login />} />
+
+      <Route
+        path="/panel"
+        element={
+          <ProtectedRoute>
+            <Panel />
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
   )
 }
 
