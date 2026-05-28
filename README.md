@@ -1,18 +1,42 @@
-# React + Vite
+# Prueba Técnica - Table Track (Gestor de Reservas)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Table Track es una aplicación web tipo SPA desarrollada con React que permite gestionar reservas de un restaurante.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El sistema simula un entorno real de trabajo donde un host puede:
+- Crear reservas
+- Editarlas
+- Eliminarlas
+- Visualizarlas en tiempo real
 
-## React Compiler
+Incluye autenticación simulada con LocalStorage y consumo de una API externa.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React.js (Vite)
+- React Router DOM
+- Axios
+- SweetAlert2
+- Tailwind CSS
+- LocalStorage
+- MockAPI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  API utilizada
+
+Este proyecto utiliza una API simulada creada con MockAPI:
+
+https://6a17a14a1878294b597bae94.mockapi.io/reservas
+
+---
+
+## Instalación del proyecto
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/franyelis-castillo/prueba-tecnica.git
