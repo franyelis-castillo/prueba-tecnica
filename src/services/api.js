@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-// ESTA es tu URL correcta de MockAPI
+
+
+//MI API 
 const API_URL = 'https://6a17a14a1878294b597bae94.mockapi.io/reservas'
 
 // OBTENER reservas (GET)
